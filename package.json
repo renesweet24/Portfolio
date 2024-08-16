@@ -1,8 +1,11 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://renesweet24.github.io/Portfolio",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -35,6 +38,7 @@
     "typescript": "5.1.5"
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.3"
+    "@types/react-vertical-timeline-component": "^3.3.3",
+    "gh-pages": "^6.1.1"
   }
 }
